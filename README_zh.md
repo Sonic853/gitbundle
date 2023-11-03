@@ -1,7 +1,7 @@
 # gitbundle
 快速将远程 Git 仓库和本地仓库打包成一个文件
 
-![Snipaste_2023-11-03_23-40-26](https://github.com/Sonic853/gitbundle/assets/8389962/a48bc6b9-6dd9-416c-8ed2-541e3b1787d5)
+![Snipaste_2023-11-03_23-40-26.png](https://vip2.loli.io/2023/11/04/iWf3RwEsOYG6eNZ.png)
 
 [中文](README_zh.md) | [English](README.md)
 ## 使用方法
