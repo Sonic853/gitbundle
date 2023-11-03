@@ -1,16 +1,16 @@
 # gitbundle
-Quickly bundle remote Git repositories and local repositories
+快速将远程 Git 仓库和本地仓库打包成一个文件
 
 [中文](README_zh.md) | [English](README.md)
-## Usage
+## 使用方法
 ```
-gitbundle <remote or local path> [bundle file name]
+gitbundle <远程或本地路径> [打包文件名]
 ```
-## Unbundle
+## 解包
 ```Shell
-git clone <bundle file name> <repository name>
+git clone <打包文件名> <仓库名>
 ```
-## Example (Windows)
+## 示例 (Windows)
 ```Batchfile
 gitbundle https://github.com/Sonic853/UdonLabToolkit
 gitbundle https://github.com/Sonic853/UdonLabToolkit.git UdonLabToolkit.git.bundle
@@ -18,29 +18,20 @@ gitbundle D:\Git\UdonLabToolkit
 gitbundle D:\Git\UdonLabToolkit UdonLabToolkit.bundle
 gitbundle AGitFolder AGitFile.git.bundle
 
-@REM Unbundle
+@REM 解包
 gitbundle https://github.com/Sonic853/UdonLabToolkit.git UdonLabToolkit.git.bundle
 git clone UdonLabToolkit.git.bundle UdonLabToolkit
 ```
-## Example (Linux)
+## 示例 (Linux)
 ```Shell
 ./gitbundle.sh https://github.com/Sonic853/UdonLabToolkit
-# if you have install gitbundle.sh to /usr/bin/gitbundle and set it chmod +x
+# 如果你已经将 gitbundle.sh 安装到 /usr/bin/gitbundle 并设置了 chmod +x
 gitbundle https://github.com/Sonic853/UdonLabToolkit.git UdonLabToolkit.git.bundle
 gitbundle /home/Sonic853/Git/UdonLabToolkit
 gitbundle /home/Sonic853/Git/UdonLabToolkit UdonLabToolkit.bundle
 gitbundle AGitFolder AGitFile.git.bundle
 
-# Unbundle
+# 解包
 gitbundle https://github.com/Sonic853/UdonLabToolkit.git UdonLabToolkit.git.bundle
 git clone UdonLabToolkit.git.bundle UdonLabToolkit
 ```
-<!-- ## Install (Windows)
-```Batchfile
-copy gitbundle.bat C:\Windows\System32\gitbundle.bat
-```
-## Install (Linux)
-```Shell
-sudo cp gitbundle.sh /usr/bin/gitbundle
-sudo chmod +x /usr/bin/gitbundle
-``` -->
